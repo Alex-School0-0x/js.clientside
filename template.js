@@ -15,6 +15,7 @@ class ItemManager {
         try {
             const response = await fetch("data.json");
             const data = await response.json();
+            this.items = [];
             this.items = data.map(itemdata => new Item(itemdata.name, itemdata.price, itemdata.category));
             console.log("Data fetched successfully:", this.items);
         } catch (error) {

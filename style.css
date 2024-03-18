@@ -1,0 +1,25 @@
+
+body {
+    display: flex;
+    align-items: center;
+}
+.main {
+    max-width: 200em;
+    margin: 0 auto;
+}
+
+#demo {
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-columns: max-content max-content;
+}
+
+#ordernumDisplay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 1em;
+    border: 1px solid black;
+}
